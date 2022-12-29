@@ -4,9 +4,9 @@ Simply JavaScript calendar planner web app.
 # React JS Recipe Web App 
 
 ✔ Ability to display months
-✔ Categories for different national cuisines.
-✔ Recipe details and ingredients.
-✔ Fetching data from API.
+✔ Ability to schedule an event.
+✔ Ability to delete an event.
+✔ Ability to view events.
 
 
 ## Technologies ✅ HTML ✅ CSS 🟨 JavaScript 
