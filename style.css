@@ -1,0 +1,203 @@
+body {
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+  background-color: #eeeeee;
+  font-family: "Roboto", sans-serif;
+}
+
+button {
+  width: 4rem;
+  cursor: pointer;
+  box-shadow: 0px 0px 2px gray;
+  border: none;
+  outline: none;
+  padding: 5px;
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+}
+
+#header {
+  padding: 10px;
+  color: #1b5a1b;
+  font-size: 26px;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+
+h1 {
+  color: #333335;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-align: center;
+  text-shadow: #347334 1px 0 10px;
+}
+
+#header button {
+  background-color: #0d9118;
+}
+
+#container {
+  width: 790px;
+  height: 10%;
+}
+
+#week {
+  width: 100%;
+  display: flex;
+  color: #064e06;
+}
+
+#week div {
+  width: 100px;
+  padding: 10px;
+}
+
+#calendar {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.day {
+  width: 100px;
+  padding: 10px;
+  height: 100px;
+  cursor: pointer;
+  box-sizing: border-box;
+  background-color: rgb(255, 255, 255);
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 12px;
+  -webkit-box-shadow: 8px 8px 16px 0px rgb(163, 163, 163);
+  -moz-box-shadow: 8px 8px 16px 0px rgb(163, 163, 163);
+  box-shadow: 8px 8px 16px 0px rgb(163, 163, 163);
+}
+.day:hover {
+  background-color: #93e693;
+}
+
+.day + #currentDay {
+  background-color: #cccfd1;
+}
+
+.event {
+  font-size: 10px;
+  padding: 3px;
+  background-color: #207e1e;
+  color: rgb(255, 255, 255);
+  border-radius: 8px;
+  max-height: 55px;
+  overflow: hidden;
+}
+
+.padding {
+  cursor: default !important;
+  background-color: #fffcff !important;
+  box-shadow: none !important;
+}
+
+#addEvent,
+#deleteEventDay {
+  display: none;
+  z-index: 20;
+  padding: 25px;
+  background-color: #e8f4fa;
+  box-shadow: 0px 0px 3px black;
+  border-radius: 5px;
+  width: 350px;
+  top: 100px;
+  left: calc(50% - 175px);
+  position: absolute;
+}
+
+#modalBackDrop {
+  display: none;
+  top: 0px;
+  left: 0px;
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-color: rgba(26, 26, 26, 0.8);
+}
+
+#eventName {
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+  box-shadow: 0px 0px 3px gray;
+}
+
+#eventName.error {
+  border: 3px solid rgb(136, 9, 9);
+}
+
+#cancelBtn,
+#deleteBtn {
+  background-color: #931616;
+}
+
+#saveBtn,
+#closeBtn {
+  background-color: #108437;
+}
+#eventText {
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 480px) {
+  #container {
+    width: 420px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .day {
+    width: 11%;
+    height: 3rem;
+    border-radius: 8px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .event {
+    color: transparent;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #week div {
+    font-size: 8.2px;
+    font-weight: 400;
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  button {
+    margin-right: 1rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #addEvent {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #deleteEventDay {
+    width: 70%;
+  }
+}
